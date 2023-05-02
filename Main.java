@@ -6,8 +6,17 @@ import Homework_7.srp.Input;
 
 public class Main {
     public static void main(String[] args) {
-        Actions result = new Actions(new Complex(0, 0));
+        Complex complex1 = new Complex(0, 0);
+        Complex complex2 = new Complex(0, 0);
+        Actions result = new Actions(complex1, complex2);
         Input input = new Input(result);
+        result.add(complex1,complex2);
+        input.print();
+        result.sub(complex1, complex2);
+        input.print();
+        result.mul(complex1, complex2);
+        input.print();
+        result.div(complex1, complex2);
         input.print();
     }
 

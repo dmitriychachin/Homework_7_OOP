@@ -5,10 +5,10 @@ public class Actions {
     private double real;
     private double image;
 
-    public Actions(Complex a){
+    public Actions(Complex a, Complex b){
     }
 
-    Complex add (Complex a, Complex b) {// Добавить комплексные числа
+    public Complex add (Complex a, Complex b) {// Добавить комплексные числа
         double real = a.getReal();
         double image = a.getImage();
         double real2 = b.getReal();
@@ -19,7 +19,7 @@ public class Actions {
         return result;
     }
     
-     Complex sub (Complex a, Complex b) {// Вычитаем комплексные числа
+    public Complex sub (Complex a, Complex b) {// Вычитаем комплексные числа
         double real = a.getReal();
         double image = a.getImage();
         double real2 = b.getReal();
@@ -30,7 +30,7 @@ public class Actions {
         return result;
     }
     
-     Complex mul (Complex a, Complex b) {// умножить комплексные числа
+    public Complex mul (Complex a, Complex b) {// умножить комплексные числа
         double real = a.getReal();
         double image = a.getImage();
         double real2 = b.getReal();
@@ -41,7 +41,7 @@ public class Actions {
         return result;
     }
     
-     Complex div (Complex a, Complex b) {// Делим комплексные числа
+    public Complex div (Complex a, Complex b) {// Делим комплексные числа
         double real = a.getReal();
         double image = a.getImage();
         double real2 = b.getReal();
